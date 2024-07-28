@@ -10,15 +10,17 @@ const restartBtn = document.querySelector("#restartBtn");
 
 const streak = document.querySelector("#streak");
 const highStreak = document.querySelector("#highStreak");
+
+let choiceClicked = false;
 let streakValue = parseInt(document.querySelector("#streak").textContent);
 let highStreakValue = parseInt(document.querySelector("#highStreak").textContent);
-let choiceClicked = false;
 
 main();
 
 function main() {
     continueGame();
-    activateButtons();
+    initializeButtons();
+    activateChoices();
 }
 
 
@@ -26,7 +28,7 @@ function continueGame() {
     highStreak.textContent =  localStorage.getItem('pkmn_highStreak') ? highStreakValue = parseInt(localStorage.getItem('pkmn_highStreak')) : highStreakValue = 0;
     
     initializeContents();
-    setTimeout(fetchPokemon, 2000);
+    setTimeout(fetchPokemon, 500);
 }
 
 function initializeContents() {
@@ -63,8 +65,8 @@ async function fetchPokemon() {
     }
     
     // targetID = 123;
-    console.log(targetId);
-    console.log(targetIndex);
+    // console.log(targetId);
+    // console.log(targetIndex);
     
     try {
         // Start all requests in parallel        
@@ -122,9 +124,9 @@ async function fetchPokemon() {
             }
         }
         
-        console.log(choiceArray);
-        console.log(targetArray);
-        console.log(colorArray);
+        // console.log(choiceArray);
+        // console.log(targetArray);
+        // console.log(colorArray);
 
         // Process dex entry
         const englishEntry = targetDexData.flavor_text_entries.filter(entry => entry.language.name === 'en');
@@ -225,14 +227,26 @@ function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function activateButtons() {
+function initializeButtons() { 
+    nextBtn.addEventListener('click', () => {
+        continueGame();
+    });
+    
+    restartBtn.addEventListener('click', () => {
+        streakValue = 0;
+        streak.textContent = streakValue;
+        continueGame();
+    });
+}
+
+function activateChoices() {
     
     choices.forEach(choice => { 
         choice.addEventListener('click', () => {
             
             if (!choiceClicked) {
-                checkChoice(); // Call the function only once
-                choiceClicked = true; // Set the flag to true after calling the function
+                checkChoice();
+                choiceClicked = true;
             }
             
             if (choice.textContent === capitalize(targetPkmn)) {
@@ -285,36 +299,19 @@ function activateButtons() {
 
 function checkChoice() {
 
-        dexPkmn.classList.remove('dex__pkmn--filter');
-        
-        choices.forEach(choice => {
-            choice.disabled = true;
-            choice.style.cursor = "default";
-        });
+    dexPkmn.classList.remove('dex__pkmn--filter');
 
-        controlButtons();
+    choices.forEach(choice => {
+        choice.disabled = true;
+        choice.style.cursor = "default";
+    });
 
-}
+    // setTimeout(continueGame, 2000);
 
-function controlButtons() {
-    
     nextBtn.classList.add('btn--active');
     restartBtn.classList.add('btn--active');
-    
+
     nextBtn.removeAttribute("disabled");
     restartBtn.removeAttribute("disabled");
-    
-    console.log(nextBtn);
-    
-    nextBtn.addEventListener('click', () => {
-        console.log('Next');
-        continueGame();
-    });
-    
-    restartBtn.addEventListener('click', () => {
-        streakValue = 0;
-        streak.textContent = streakValue;
-        continueGame();
-    });
-    
+
 }
