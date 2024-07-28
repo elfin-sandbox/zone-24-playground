@@ -46,6 +46,7 @@ function initializeContents() {
     
     dexResponse.textContent = "Who's That Pokémon?";
     dexResponse.style.color = "var(--primary-color)";
+    dexPkmn.classList.add('dex__pkmn--filter');
     
     nextBtn.classList.remove('btn--active');
     restartBtn.classList.remove('btn--active');
@@ -141,7 +142,6 @@ async function fetchPokemon() {
         // Process dex sprite
         const spriteURL = targetSpriteData.sprites.other?.['official-artwork']?.front_default;
         dexPkmn.setAttribute('src', spriteURL);
-        dexPkmn.classList.add('dex__pkmn--filter');
         
         // Process buttons
         for(let i = 0; i < choices.length; i++) {
