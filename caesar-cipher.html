@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style-caesar.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    
+    <title>Z24 - Caesar Cipher</title>
+</head>
+
+<body>
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="res/logo.png" alt="Zone 24">
+                    <h1 class="header__logo-text">Zone 24</h1>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Github</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Explore</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1 class="game__title">Z24:&nbsp;<span id="game__span">Caesar Cipher</span></h1>
+
+    <main>
+        <div class="container">
+            <div class="shifter">
+                <p class="shifter__shift">SHIFT</p>
+                <div class="shifter__tab">
+                    <p class="shifter__tab__numbers" id="shift1">+1</p>
+                    <p class="shifter__tab__numbers" id="shift2">+2</p>
+                    <p class="shifter__tab__numbers" id="shift3">+3</p>
+                    <p class="shifter__tab__numbers" id="shift4">+4</p>
+                    <p class="shifter__tab__numbers" id="shift5">+5</p>
+                </div>
+            </div>
+            
+            <div class="actor">
+                <div class="input__card caesar__card">
+                    <p class="caesar__label" id="inputLabel">Plaintext</p>
+                    <textarea id="inputText" class="caesar__text textarea" placeholder="Enter text here" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                    <i class='bx bx-trash'></i>
+                </div>
+                
+                <img src="res/caesar_arrow.svg" alt="" width="50px" class="img__swap" id="imgSwap">
+                
+                <div class="output__card caesar__card">
+                    <p class="caesar__label" id="outputLabel">Ciphertext</p>
+                    <textarea id="outputText" class="caesar__text textarea" placeholder="Output will appear here" readonly oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                    <span id="copyMessage">Copied!</span>
+                    <i class='bx bx-trash'></i>
+                    <i class='bx bx-copy'></i> 
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Zone 24. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script-caesar.js"></script>
+
+    
+</body>
+</html>

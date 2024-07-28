@@ -1,0 +1,172 @@
+/* MAIN */
+
+.game__title {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-top: 25px;
+}
+
+.game__title span {
+    color: var(--p-violet);
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SHIFT */
+
+.shifter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 17.5rem;
+        
+    border-radius: 10px;
+    background-color: rgb(24, 3, 51);
+    }
+
+.shifter__tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.shifter__tab__numbers {
+    margin-left: 50px;
+    height: 100%;
+    cursor: pointer;
+    padding: 20px 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    
+    transition: all 0.15s linear;
+}
+
+.shifter__tab__numbers:hover {
+    color: var(--p-violet);
+    border: 2px solid var(--p-violet);
+}
+
+.shifter__shift {
+    color: white;
+    font-weight: 600;
+    font-size: 1.175rem;
+    padding: 20px 30px;
+    opacity: 0.75;
+}
+
+/* INPUT */
+.actor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.caesar__card {
+    position: relative;
+    width: 50%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-top: 25px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    background-color: rgb(24, 3, 51);
+}
+
+.caesar__label {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.caesar__text {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    background-color: rgb(24, 3, 51);
+    caret-color: aliceblue;
+    color: white;
+    font-size: 1.25rem;
+    border: 2px solid transparent;
+    margin-bottom: 25px;
+}
+
+.textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}
+
+.bx {
+    cursor: pointer;
+}
+
+.bx:hover {
+    color: var(--p-violet);
+    opacity: 1;
+}
+
+.bx-copy {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    opacity: 0.7;
+    font-size: 1.25rem;
+}
+
+.bx-trash {
+    position: absolute;
+    bottom: 25px;
+    right: 65px;
+    opacity: 0.7;
+    font-size: 1.25rem;
+}
+
+#copyMessage {
+    position: absolute;
+    bottom: 24px;
+    right: 110px;
+    text-align: right;
+    color: var(--p-violet);
+    font-size: 0.95rem;
+    transition: all 0.15s ease;
+    
+    display: none;
+}
+
+.input__card .bx-trash {
+    right: 30px;
+}
+
+.img__swap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.flipped {
+    position: absolute;
+    top: 36%;
+    width: 100px;
+    z-index: 1;
+    cursor: pointer;
+    transform: scaleX(-1);
+}

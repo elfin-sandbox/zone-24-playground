@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style-index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <title>Zone 24</title>
+</head>
+
+<body>
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="res/logo.png" alt="Zone 24">
+                    <h1 class="header__logo-text">Zone 24</h1>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Github</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Explore</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Welcome to Zone 24</h1>
+                <p class="hero__text">A place where you to discover and experiment upon the foundations of web
+                    development.</p>
+                <a href="#feat" class="hero__btn">Explore</a>
+                <p class="hero__author">Developed by: C. ALP.</p>
+                <p class="hero__author">BS in Information Technology</p>
+            </div>
+            <img src="res/hero-globe.png" alt="" class="hero__img">
+        </div>
+    </section>
+
+    <section class="feat" id="feat">
+        <div class="container">
+            <h1 class="feat__header">Sandbox Mode</h1>
+            <p class="feat__p">Enjoy a wide array of activities within the site.</p>
+            <div class="card-container">
+                <a class="card" href="guess-number.html">
+                    <div class="card__header">
+                        <h2 class="card__title">Guess the Number</h2>
+                        <img class="card__icon" src="res/svg1.svg" alt="">
+                    </div>
+                    <p class="card__text">Test your wits and guess the hidden code!</p>
+                </a>
+                
+                <a class="card" href="caesar-cipher.html">
+                    <div class="card__header">
+                        <h2 class="card__title">Caesar Cipher</h2>
+                        <img class="card__icon" src="res/svg2.svg" alt="">
+                    </div>
+                    <p class="card__text">Translate messages into hidden codes!</p>
+                </a>
+                
+                <a class="card" href="whos-that-pokemon.html">
+                    <div class="card__header">
+                        <h2 class="card__title">Who's That Pokemon?</h2>
+                        <img class="card__icon" src="res/svg3.svg" alt="">
+                    </div>
+                    <p class="card__text">Know your level of Pokémon knowledge!</p>
+                </a>
+                
+                <div class="card" id="soonCard">
+                    <p class="card__soon">STAY TUNED FOR MORE!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Zone 24. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script src="js/script-index.js"></script>
+
+</body>
+
+
+</html>

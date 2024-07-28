@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* MAIN */
+
+.game__title {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-top: 25px;
+}
+
+.game__title span {
+    color: var(--p-cyan);
+}
+
+main {
+    font-family: "Lilita One", sans-serif;
+    text-transform: uppercase;
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+main .container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: var(--main-padding);
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2 {
+    font-weight: normal;
+}
+
+.score__tab {
+    margin-bottom: 5px;
+}
+
+.score__label {
+    font-size: 1rem;
+}
+
+#turn-label,
+#recent-label {
+    color: rgba(255, 255, 255, 0.722)
+}
+
+.score__value {
+    font-size: 1.75rem;
+    color: rgba(255, 255, 255, 0.722)
+}
+
+#higher-label {
+    color: var(--secondary-color);
+}
+
+#lower-label {
+    color: var(--tertiary-color);
+}
+
+.game__label {
+    font-weight: normal;
+}
+
+.container input {
+    font-family: var(--lilita);
+    color: white;
+    width: 100%;
+    padding: auto 0;
+    font-size: 14rem;
+    /* Increase font size */
+    background-color: transparent;
+    /* Remove background */
+    border: none;
+    text-align: center;
+    caret-color: rgba(255, 255, 255, 0.688);
+    margin-bottom: 5px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    transition: all 0.2s;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+.container input:active {
+    border: none;
+}
+
+.container input:focus {
+    outline: none;
+}
+
+.button__tab {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button__tab a {
+    text-decoration: none;
+}
+
+.game-btn {
+    all: unset;
+    font-family: var(--manrope);
+    font-size: 1rem;
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.submit {
+    border: var(--p-cyan) 2px solid;
+    color: var(--p-cyan);
+}
+
+.submit:hover {
+    background-color: var(--p-cyan);
+    color: black;
+}
+
+.hover-effect {
+    background-color: #00ffc8;
+    /* Example hover background color */
+    color: black;
+    /* Example hover text color */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+}
+
+
+.clear:hover {
+    color: red;
+}
+
+.play {
+    display: none;
+    border: var(--p-cyan) 2px solid;
+    color: var(--p-cyan);
+}
+
+.play:hover {
+    background-color: var(--p-cyan);
+    color: black;
+}
+
+.points-tab {
+    width: 100%;
+    display: flex;
+}
+
+.points {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: var(--manrope);
+}
+
+.points span {
+    font-weight: 800;
+}

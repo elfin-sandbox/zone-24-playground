@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style-pokemon.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    
+    <title>Z24 - Who's That Pokémon?</title>
+</head>
+
+<body>
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="res/logo.png" alt="Zone 24">
+                    <h1 class="header__logo-text">Zone 24</h1>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Github</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Explore</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1 class="game__title">Z24:&nbsp;<span id="game__span">Who's That Pokémon?</span></h1>
+
+    <main>
+        <div class="container">
+            <div class="streak-tab">
+                <h3 class="streak">Streak: <span id="streak">0</span></h3>
+                <h3 class="streak">Highest Streak: <span id="highStreak">0</span></h3>
+            </div>
+            
+            <div class="game__container">
+                
+                <div class="dex__container">
+                    <div class="dex__bg">
+                        <img src="" alt="" class="dex__pkmn" id="dexPkmn">
+                    </div>
+                </div> 
+                
+                <div class="actor__container">
+                    <div class="dex__text-container">
+                        <p class="dex__text" id="dexText">&nbsp;<br>&nbsp;</p>
+                        <p class="dex__response">Who's That Pokémon?</p>
+                    </div>
+                    
+                    <div class="choice__container">
+                        <button class="choice" id="choice1">&nbsp;</button>
+                        <button class="choice" id="choice2">&nbsp;</button>
+                        <button class="choice" id="choice3">&nbsp;</button>
+                        <button class="choice" id="choice4">&nbsp;</button>
+                    </div>             
+                    <div class="btn__container">
+                        <button class="game__btn" id="restartBtn" disabled>Restart</button>
+                        <button class="game__btn" id="nextBtn" disabled>Continue</button>
+                    </div>    
+                    
+                </div>
+                
+            </div> 
+                     
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Zone 24. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script-pokemon.js"></script>
+
+    
+</body>
+</html>

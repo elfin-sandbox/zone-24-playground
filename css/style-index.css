@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* HERO */
+
+body section .container {
+    padding: var(--landing-padding);
+}
+
+.hero__img {
+    width: 40%;
+}
+
+.hero .container {
+    padding: var(--hero-padding);
+    gap: 10rem;
+}
+
+.hero__title {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.hero__text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    border: 2px solid var(--primary-color);;
+    border-radius: 10px;
+    color: var(--primary-color);
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.hero__btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+.hero__author {
+    color: hsla(0, 0%, 100%, 0.604);
+    font-size: 0.9rem;
+}
+
+/* FEAT */
+
+.feat {
+    background-color: var(--p1);
+}
+
+.feat .container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+
+.feat__header{
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    margin: 50px;
+    /* border: red 2px solid; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+    border: var(--p-lightgray) 2px solid;
+    align-self: stretch;
+    border-radius: 10px;
+    padding: 25px 30px;
+    height: auto;
+    width: calc(50% - 1rem);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card__title {
+    transition: all 0.3s ease; 
+}
+
+.card:nth-of-type(1) .card__title:hover {
+    color: var(--p-cyan);
+}
+
+.card:nth-of-type(2) .card__title:hover {
+    color: var(--p-violet);
+}
+
+.card:nth-of-type(3) .card__title:hover {
+    color: var(--p-scarlet);
+}
+
+
+.card__icon {
+    width: 40px;
+}
+
+.card__text {
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.649);
+    margin-top: 10px;
+}
+
+#soonCard {
+    color: white;
+    cursor: default;
+    
+    p {
+        opacity: 0.7;
+    }
+      
+}

@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #0C99E8;
+    --secondary-color: #4B45FA;
+    --tertiary-color: #c84e0d;
+    
+    --p1: hsl(216, 100%, 8%);
+    
+    --p-cyan: #00ffc8;
+    --p-violet: #9717ff;
+    --p-scarlet: #ff2426;
+    --p-lightgray: rgba(177, 177, 177, 0.553);
+    
+    --main-padding: 2.2rem min(8.5rem, 10rem);
+    --landing-padding: 3.5rem min(8.5rem, 10rem);
+    --hero-padding: 5rem min(8.5rem, 10rem);
+    --header-padding: 1.75rem min(8.5rem, 10rem);
+    --footer-padding: 1.75rem min(8.5rem, 10rem);
+    
+    --lilita: "Lilita One", sans-serif;
+    --manrope: "Manrope", sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #333;
+}
+
+.header .container {
+    position: relative;
+}
+
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    /* background-color: rgb(255, 103, 103); */
+    backdrop-filter: blur(5px);
+    z-index: 1000; /* Ensures the header is on top of other content */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main-padding);
+    color: white;
+}
+
+/* HEADER */
+
+.header .container {
+    padding: var(--header-padding);
+}
+
+.header__logo a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__logo img {
+    width: 1.6rem;
+    margin-right: 5px;
+}
+
+.header__logo-text {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin-left: 20px;
+}
+
+.header__nav-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.header__nav-link:hover {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* BODY */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url("../res/hero-bg.png");
+    background-position: center;
+}
+
+section {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+footer .container {
+    background-color: black;
+    padding: var(--footer-padding);
+}
+footer p {
+    width: 100%;
+    text-align: center;
+}
