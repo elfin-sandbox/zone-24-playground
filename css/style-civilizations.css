@@ -1,0 +1,150 @@
+/* MAIN */
+/* border: 2px red solid; */
+
+.game__title {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-top: 25px;
+}
+
+.game__title span {
+    color: var(--p-yellow);
+}
+
+main {
+    font-family: var(--manrope);
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 2px red solid; */
+}
+
+/* GAME BOARD */
+
+.game__board {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    /* border: 2px green solid; */
+}
+
+.game__board-row {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    
+    background-color: var(--p2);
+    
+    /* border: 2px violet solid; */
+}
+
+.game__board-row > * {
+    flex: 1;
+}
+
+.response__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px red solid; */
+}
+
+.response {
+    border-radius: 1000px;
+    border: 2px whitesmoke solid;
+    height: 20px;
+    width: 20px;
+
+}
+
+.navigation__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px red solid; */
+    
+}
+
+.navig__img {
+    width: 100px;
+    border-radius: 5px;
+    border: 4px black solid;
+}
+
+.img__default-cursor {
+    cursor: default !important;
+}
+
+.button__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px red solid; */
+}
+
+.button {
+    all: unset;
+    border-radius: 20px;
+    border: 2px var(--p1) solid;
+    text-align: center;
+    padding: 5px 10px;
+    width: 100px;
+    margin-right: 75px;
+    transition: all 0.3s ease;
+}
+
+.button__submit {
+    cursor: pointer;
+    border: 2px var(--p-yellow) solid;
+}
+
+.button__submit:hover {
+    background-color: var(--p-yellow);
+    color: var(--p2);
+}
+
+.inactive__board{
+    filter: brightness(50%);
+}
+
+
+
+
+
+/* POINTS */
+
+.points__tab {
+    width: 100%;
+    display: flex;
+}
+
+.points {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: var(--manrope);
+}
+
+.points span {
+    font-weight: 800;
+}

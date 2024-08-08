@@ -7,15 +7,14 @@ const soonCardIndex = Array.prototype.indexOf.call(cardContainer.children, soonC
 soonCardModifier();
 
 function soonCardModifier() {
-    
-    if (soonCardIndex % 3 === 0) {
+
+    if (soonCardIndex % 2 !== 0) {
         soonCard.style.width = "100%";
         soonCard.style.textAlign = "center";
         soonCard.style.fontSize = "1.15rem";
-    }
-    
-    else {
-        soonCard.style.width = "calc(50% - 1rem);";
+        soonCard.style.flexGrow = "1";
+    } else {
+        soonCard.style.width = "calc(50% - 1rem)";
         soonCard.style.textAlign = "center";
         soonCard.style.fontSize = "1.5rem";
     }

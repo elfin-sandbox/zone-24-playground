@@ -4,10 +4,12 @@
     --tertiary-color: #c84e0d;
     
     --p1: hsl(216, 100%, 8%);
+    --p2: hsl(217, 92%, 14%);
     
     --p-cyan: #00ffc8;
     --p-violet: #9717ff;
     --p-scarlet: #ff2426;
+    --p-yellow: #ffd700;
     --p-lightgray: rgba(177, 177, 177, 0.553);
     
     --main-padding: 2.2rem min(8.5rem, 10rem);

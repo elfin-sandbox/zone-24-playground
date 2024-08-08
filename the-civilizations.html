@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style-civilizations.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <title>Z24 - The Civilizations</title>
+</head>
+<body>
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="res/logo.png" alt="Zone 24">
+                    <h1 class="header__logo-text">Zone 24</h1>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Github</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Explore</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1 class="game__title">Z24:&nbsp;<span id="game__span">The Civilizations</span></h1>
+
+    <main>
+        <div class="game__container container">
+            
+            <div class="game__board" id="gameBoard0">
+                <div class="game__board-row" id="row-0">
+                    <div class="response__container" id="response_container0">
+                        <div class="response" id="resp1"></div>
+                        <div class="response" id="resp2"></div>
+                        <div class="response" id="resp3"></div>
+                    </div>
+                    
+                    <div class="navigation__container" id="nav_container0">
+                        <img src="res/civil/dark.png" alt="" class="navig__img" id="nav1">
+                        <img src="res/civil/dark.png" alt="" class="navig__img" id="nav2">
+                        <img src="res/civil/dark.png" alt="" class="navig__img" id="nav3">
+                    </div>
+                    
+                    <div class="button__container">
+                        <button class="button button__submit" id="btnSubmit0">Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="points__tab">
+                <h3 class="points">Score: <span id="gameScore">0</span></h3>
+                <h3 class="points">High Score: <span id="highScore">0</span></h3>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Zone 24. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script-civilizations.js"></script>
+</body>
+</html>
