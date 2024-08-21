@@ -2,22 +2,22 @@
     --primary-color: #0C99E8;
     --secondary-color: #4B45FA;
     --tertiary-color: #c84e0d;
-    
+
     --p1: hsl(216, 100%, 8%);
     --p2: hsl(217, 92%, 14%);
-    
+
     --p-cyan: #00ffc8;
     --p-violet: #9717ff;
     --p-scarlet: #ff2426;
     --p-yellow: #ffd700;
     --p-lightgray: rgba(177, 177, 177, 0.553);
-    
+
     --main-padding: 2.2rem min(8.5rem, 10rem);
     --landing-padding: 3.5rem min(8.5rem, 10rem);
     --hero-padding: 5rem min(8.5rem, 10rem);
     --header-padding: 1.75rem min(8.5rem, 10rem);
     --footer-padding: 1.75rem min(8.5rem, 10rem);
-    
+
     --lilita: "Lilita One", sans-serif;
     --manrope: "Manrope", sans-serif;
 
@@ -43,13 +43,15 @@ body {
 }
 
 .sticky-header {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
+    /* For Safari */
     position: sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.37);
     /* background-color: rgb(255, 103, 103); */
     backdrop-filter: blur(5px);
-    z-index: 1000; /* Ensures the header is on top of other content */
+    z-index: 1000;
+    /* Ensures the header is on top of other content */
 }
 
 
@@ -132,6 +134,7 @@ footer .container {
     background-color: black;
     padding: var(--footer-padding);
 }
+
 footer p {
     width: 100%;
     text-align: center;
